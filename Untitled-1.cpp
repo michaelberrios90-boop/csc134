@@ -16,7 +16,7 @@ int number_of_items = 20;
 double cost_each = 0.99;
 double total_cost; 
 // Greet the customer
-cout << "Welcome to the" << item_name << " store."<< endl;
+cout << "Welcome to the " << item_name << " store."<< endl;
 
 //Ask for the order
 // assume they'll buy everything
@@ -27,7 +27,7 @@ cout << "Each costs $" << cost_each << endl;
 total_cost = number_of_items * cost_each; 
 
 // Output the results
-cout << "To purchase all " << number_of_items << "will cost $" << total_cost << " total." << endl;
+cout << "To purchase all " << number_of_items  << " will cost $" << total_cost << " total." << endl;
 cout << "Thank you for shopping with us!" << endl; 
     
 return 0; // no errors
