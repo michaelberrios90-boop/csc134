@@ -10,19 +10,23 @@ michaelberrios90
 using namespace std;
 
 int main() {
-/* Build a simple receipt calculator for the bill
-from a restaurant (excluding tips) */
+// Purpose - Create a simple receipt
+// should also handle sales tax (8%)
 
-// Set up variables
-// Declare Real amount_tax, total
-// Declare Real constant TAX_RATE = 0.08
-// Declare Real meal_price = $5.99
+// Declare our variables
+string item = "Hamburgers"; 
 double amount_tax, total;
 double TAX_RATE = 0.08;
 double meal_price = 5.99;
 
-// Set amount_tax = meal_price * TAX_RATE
-// Set total = meal_price + amount_tax
+// Greeet user and take the order
+    
+// Calculate the meal price
+    
+// Calculate the sales tax and the total price
+    
+// Print the receipt
+
 amount_tax = meal_price * TAX_RATE;
 total = meal_price + amount_tax;
 
