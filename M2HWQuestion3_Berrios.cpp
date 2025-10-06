@@ -9,10 +9,10 @@ michaelberrios90
 #include <iomanip>
 using namespace std; 
 
-int mmain(){
+int main() {
 
 // Declare variables
-int quantityPizza, slicesPizza, numberVisitors, visitorConsumption, leftoverPizza;
+int quantityPizza, slicesPizza, numberVisitors, visitorConsumption,totalSlices, leftoverPizza;
 const int VISITOR_EATING_RATE = 3;
 
 // Ask how many pizzas you order
@@ -23,6 +23,9 @@ cin >> quantityPizza;
 cout << "How many slices per pizza? "; 
 cin >> slicesPizza;
 
+// Calculate total slices of pizzas
+totalSlices = slicesPizza * quantityPizza;
+
 // Ask how many visitors are coming?
 cout << "How many visitors, including yourself, are coming? ";
 cin >> numberVisitors;
@@ -31,10 +34,18 @@ cin >> numberVisitors;
 visitorConsumption = numberVisitors * VISITOR_EATING_RATE;
 
 //Calculate leftover pizza slices
-leftoverPizza = slicesPizza - visitorConsumption;
+leftoverPizza = totalSlices - visitorConsumption;
 
-// Print final results
-cout << "Number of pizza slices leftover: " << leftoverPizza << endl;
+/*
+Set up If-Then condition to display leftover pizza 
+slices if there aren't enough leftover
+*/  
+
+if (leftoverPizza <= 0) {
+    cout << "There are no more slices left over" << endl;
+} else if (leftoverPizza > 0) {
+    cout << "Number of leftover pizza slices: " << leftoverPizza << endl;
+}
 
 return 0;
 }
