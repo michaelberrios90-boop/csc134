@@ -32,7 +32,7 @@ else
     letterGrade = "F";
 
 // Print the results
-cout << "Your letter is: " << letterGrade << endl;
+cout << "Your letter grade is: " << letterGrade << endl;
 cout << " " << endl;
     return 0;
 }
