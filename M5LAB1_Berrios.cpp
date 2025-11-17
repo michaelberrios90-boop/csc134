@@ -2,7 +2,7 @@
 CSC 134
 M5LAB1- Choose Your Own Adventure
 Michael Berrios
-11/10/2025
+11/16/2025
 This program is to serve as a template to build a menu program
 */
 
@@ -68,18 +68,14 @@ void choice_front_door()
         choice_go_home();
     }
 }
+
 void choice_back_door() 
 {
-    cout << "Alright. Let's head around back!"
-    cout << ""
+    cout << "Alright. Let's head around back!" << endl;
+    cout << "Congrats! You've dscovered a Card Key!" << endl;
+}
 
-
-
-
-
-
-
-
-
-
+void choice_go_home()
+{
+    cout << "Darn... I guess someone chickened out. Haha!" << endl;
 }
