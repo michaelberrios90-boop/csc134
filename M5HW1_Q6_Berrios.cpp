@@ -2,7 +2,7 @@
 // michaelberrios90
 // M5HW1 - Q6 Gold Tier
 // 11/19/2025
-// Program is to create a Main menu to access all other questions of M5HW!.
+// Program is to create a Main menu to access all other questions of M5HW1.
 
 #include <iostream>
 #include <iomanip>
